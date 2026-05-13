@@ -1,0 +1,5 @@
+* source LAB01_TASK6
+V_V1         N011330 0 5
+X_D1         N01211 N01207 awb1n4001 PARAMS:                
+R_R1         N011330 N01211  2.2k TC=0,0 
+R_R2         0 N01207  1k TC=0,0 

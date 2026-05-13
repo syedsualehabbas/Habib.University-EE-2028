@@ -1,0 +1,29 @@
+*.tmp
+*.log
+*.cache
+*.o
+*.out
+*.exe
+*.bin
+*.vcd
+*.wlf
+*.srcs/
+*.runs/
+*.sim/
+Sem 2/Calculus II/Jon Rogawski, Colin Adams - Calculus_ Early Transcendentals.pdf
+**/.git/
+*/.git/
+*.exe
+*.out
+*.o
+# Heavy engineering/simulation files
+*.dat
+*.dbk
+*.opj
+*.DSN
+*.sim
+*.mif
+*.mrk
+*.prb
+*.out
+*.log

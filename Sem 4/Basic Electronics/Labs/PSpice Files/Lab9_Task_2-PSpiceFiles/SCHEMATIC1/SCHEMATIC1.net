@@ -1,0 +1,5 @@
+* source LAB9_TASK_2
+X_U1         N00973 N01068 0 2N7000
+R_R1         N00973 N01020  1k TC=0,0 
+V_V1         N01020 0 10Vdc
+V_V2         N01068 0 10Vdc

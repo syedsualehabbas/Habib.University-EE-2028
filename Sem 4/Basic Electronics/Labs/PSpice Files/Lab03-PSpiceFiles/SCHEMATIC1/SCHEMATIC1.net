@@ -1,0 +1,7 @@
+* source LAB03
+V_V1         N00135 0 2.7
+V_V2         N00379 0 10
+R_R1         N00135 N00142  100k TC=0,0 
+X_Q1         N00383 N00142 0 awb2n3904 PARAMS:                                 
++            
+R_R2         N00383 N00379  1k TC=0,0 

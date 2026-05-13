@@ -1,0 +1,53 @@
+
+**** 04/10/26 23:15:00 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim1"  [ C:\Users\Administrator\OneDrive - Habib University\Sem 4\Basic Electronics\Labs\PSpice Files\Lab10 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "sim1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 0 5k 5k
+--------$
+ERROR(ORPSIM-16103): Invalid value
+.STEP LIN V_V3 20m 150m 20m 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB10 TASK 4
+C_C1         N02382 N01919  1u  TC=0,0 
+C_C2         N019630 N01895  1u  TC=0,0 
+V_V2         N01837 0 10
+V_V3         N02382 0  AC 0
++SIN 0 20m 5k 0 0 0
+R_R1         N01919 N01837  100k TC=0,0 
+R_R3         0 N02043  100 TC=0,0 
+R_R4         0 N02505  100meg TC=0,0 
+C_C3         0 N02043  15u  TC=0,0 
+X_U2         N01895 N01919 N02043 2N7000
+R_R2         0 N01919  56k TC=0,0 
+R_R5         N01895 N01837  220 TC=0,0 
+R_R6         N02505 N019630  1k TC=0,0 
+
+**** RESUMING sim1.cir ****
+.END
+

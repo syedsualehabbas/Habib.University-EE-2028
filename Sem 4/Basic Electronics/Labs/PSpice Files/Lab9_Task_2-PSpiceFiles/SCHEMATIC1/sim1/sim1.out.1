@@ -1,0 +1,55 @@
+
+**** 03/26/26 11:16:18 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim1"  [ C:\Users\Administrator\OneDrive - Habib University\Sem 4\Basic Electronics\Labs\PSpice Files\Lab9_T
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "sim1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB9_TASK_2
+.EXTERNAL OUTPUT OUTPUT
+.EXTERNAL OUTPUT INPUT
+X_U1         N00202 N00216 N00235 2N7000
+R_R1         N00202 N00244  220 TC=0,0 
+R_R2         0 N00235  100 TC=0,0 
+R_R3         0 N00216  56k TC=0,0 
+R_R4         N00216 N00244  100k TC=0,0 
+C_C1         N00202 OUTPUT  1u  TC=0,0 
+C_C2         0 N00235  15u  TC=0,0 
+V_V1         N00244 0 10Vdc
+C_C3         INPUT N00216  1u  TC=0,0 
+
+**** RESUMING sim1.cir ****
+.END
+
+ERROR(ORPSIM-15141): Less than 2 connections at node OUTPUT.
+
+ERROR(ORPSIM-15141): Less than 2 connections at node INPUT.
+
+ERROR(ORPSIM-15142): Node OUTPUT is floating
+
+ERROR(ORPSIM-15142): Node INPUT is floating
+

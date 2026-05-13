@@ -1,0 +1,51 @@
+
+**** 04/09/26 11:31:24 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-SIM1"  [ C:\Users\Administrator\OneDrive - Habib University\Sem 4\Basic Electronics\Labs\PSpice Files\Lab11-
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "SIM1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN V1 0 10 0.1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB11
+V_V2         N00860 0 0Vdc
+C_C1         N01016 N00938  1u  TC=0,0 
+M_M1         N00860 N00860 N00910 N00910 MbreakN           
+V_V3         N01016 0  AC 0
++SIN 20m 0 5k 0 0 0
+C_C2         N00980 N00910  1u  TC=0,0 
+X_U2         N00910 N00938 N01048 2N7000
+R_R3         0 N01048  100 TC=0,0 
+R_R1         N00938 N00860  100k TC=0,0 
+C_C3         0 N01048  15u  TC=0,0 
+R_R4         0 N00980  100meg TC=0,0 
+R_R2         0 N00938  56k TC=0,0 
+
+**** RESUMING SIM1.cir ****
+.END
+
+ERROR(ORPSIM-15090): DC device V1 is undefined
+

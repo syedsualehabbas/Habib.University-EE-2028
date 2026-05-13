@@ -1,0 +1,54 @@
+
+**** 04/22/26 00:07:16 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-vsdvgrw"  [ c:\users\administrator\onedrive - habib university\sem 4\basic electronics\labs\pspice files\lab
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "vsdvgrw.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../lab11-pspicefiles/lab11.lib" 
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB11
+V_V2         N00860 0 10
+C_C1         N01016 N00938  1u  TC=0,0 
+V_V3         N01016 0  AC 0
++SIN 0 20m 5k 0 0 0
+C_C2         N00980 N00910  1u  TC=0,0 
+X_U2         N00910 N02236 N01048 2N7000
+R_R3         0 N01048  100 TC=0,0 
+R_R1         N00938 N00860  100k TC=0,0 
+C_C3         0 N01048  15u  TC=0,0 
+R_R4         0 N00980  100meg TC=0,0 
+R_R2         0 N00938  56k TC=0,0 
+V_V4         N02236 0 -3
+M_M2         N00860 N03812 N00910 N00910 PMOS_TRI           
+V_V5         N03812 0 -3
+
+**** RESUMING vsdvgrw.cir ****
+.END
+
+ERROR(ORPSIM-15113): Model PMOS_TRI used by M_M2 is undefined
+

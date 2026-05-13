@@ -1,0 +1,8 @@
+* PSpice Model Editor - Version 17.2.0
+*$
+.model PMOS PMOS (VTO=-1 KP=0.002 W=100u L=100u)
+*$
+.model NMOS_TRI NMOS (VTO=-1 KP=0.002 W=100u L=100u
+*$
+.model MOS1 PMOS VTO=-1 KP=0.002 W=100u L=100u
+*$

@@ -1,0 +1,14 @@
+*PSpice Modeling Apps Index library File
+*$
+.SUBCKT ST_Model P1 P2 S1 S2
+* Model generated on 2026 January 21
+* MODEL FORMAT: PSpice
+* MODEL Type: ST_Model
+LP1 PI P2 1m
+RP1 P1 PI 10m
+RS1 S1 SI 10m
+RG1 S2 0 1G
+K1 LP1 LS1 1
+LS1 SI SI1 1.0000e-5
+LL1 SI1 S2 100n
+.ends ST_Model

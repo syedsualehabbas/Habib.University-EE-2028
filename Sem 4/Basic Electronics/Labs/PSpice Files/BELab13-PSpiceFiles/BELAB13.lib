@@ -1,0 +1,8 @@
+* PSpice Model Editor - Version 17.2.0
+*$
+.model MOS2 NMOS (VTO=1 KP=0.8m LAMBDA=0.01)
+*$
+.model MOS1 PMOS (VTO=-1 KP=0.02m LAMBDA=0.01)
+*$
+.model MOS3 PMOS VTO= -1, KP=0.02m W=6.25u L=0.25u
+*$
