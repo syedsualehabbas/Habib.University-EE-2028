@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main(){
+    const int MAX=80;
+    char str[MAX];  // Always save max-1 char init self, saves the last space for /0
+    cout<<"Enter your string (8 char max): ";
+    cin.getline(str, MAX, '$'); // Terminate with $
+    cout<<"your string is: "<<str<<endl;
+
+}
