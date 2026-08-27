@@ -40,5 +40,5 @@ Open a Pull Request.
 
 📬 Contact & Reach Out
 If you have any queries, feedback, or would like to contribute directly, feel free to open an Issue on this repository or reach out via email:
-Email: syedsualehabbas@gmail.com
+Email: sualehabbas.6981@gmail.com
 GitHub: @syedsualehabbas
