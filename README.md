@@ -1,10 +1,15 @@
 Welcome to the central academic repository for my Electrical Engineering coursework at Habib University! This repository serves as a weekly-updated archive of my undergraduate journey, housing assignments, lab work, projects, and class notes.
 
 📌 Repository Overview
+
 Owner: [@syedsualehabbas](https://github.com/syedsualehabbas)
+
 Program: B.S. Electrical Engineering (Class of 2028)
+
 Institution: Habib University
+
 Update Frequency: Weekly (Active updates for current semester tasks, homeworks, and notes)
+
 
 ## 📂 Repository Structure
 The layout directly mirrors the active semester folders in this repository:
